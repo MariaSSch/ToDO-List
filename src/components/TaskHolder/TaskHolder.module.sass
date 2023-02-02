@@ -2,11 +2,24 @@
     text-align: center
     width: 215px
     height: 234px
-    margin-left: 106px
+    //margin-left: 106px
 .task
     display: grid
     grid-template-columns: 369px 59px
     color: white
+    position: relative
+    &:hover::after
+        content: "Удалить по двойному щелчку"
+        position: absolute 
+        left: 25% 
+        top: 30% 
+        z-index: 1 
+        background: rgba(255,255,230,0.9) 
+        font-size: 11px
+        color: #34495e
+        padding: 5px 10px
+        border: 1px solid #333
+        border-radius: 5px
     .task_info
         background-color: #34495e
         margin-bottom: 14px
